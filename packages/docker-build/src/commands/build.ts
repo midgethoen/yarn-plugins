@@ -177,7 +177,7 @@ export default class DockerBuildCommand extends BaseCommand {
               await copyAdditional({
                 destination: manifestDir,
                 files: this.copyFiles,
-                dockerFilePath,
+                projec.cwd,
                 report,
               });
             }
